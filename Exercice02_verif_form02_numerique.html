@@ -10,6 +10,34 @@
 <body>
     <h1>Exercice 02 : verif_form02_numerique.html</h1>
 
+    <p>Réaliser un formulaire qui envoie les informations vers http://www.afpa.fr en méthode GET. <br>
+        Ce formulaire permet de saisir un SALAIRE. <br>
+        <strong>Contrainte : Le SALAIRE doit être saisi (taille > 0) et doit être numérique.</strong> <br>
+        Fonctionnement : <br>
+        Si la contrainte n'est pas respectée lorsque l'on clique sur le bouton SUBMIT (« ENVOYER »), un message d'erreur
+        est
+        envoyé et l'on reste sur le formulaire. <br>
+        Si la contrainte est respectée, le salaire est envoyé au site AFPA.
+    </p> <br>
+    <br>
+
+    <form action="http://www.afpa.fr" method="get">
+        <label for="salaire">Salaire :</label>
+        <input id="saisi" type="text" name="salaire" placeholder="saisir salaire">
+        <button id="btn" type="submit">ENVOYER</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <a href="index.html">retour</a>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="exercice02.js"></script>
 </body>
 
 </html>
